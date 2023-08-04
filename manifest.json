@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Link Copy",
+  "version": "1.0",
+  "description": "Copy text and link to clipboard as HTML or Markdown",
+  "permissions": ["clipboardWrite", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "copyMarkdown": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+C",
+        "mac": "MacCtrl+Shift+C"
+      },
+      "description": "Copy text and link to clipboard as Markdown"
+    },
+    "copyHTML": {
+      "suggested_key": {
+        "default": "Alt+Shift+C",
+        "mac": "Alt+Shift+C"
+      },
+      "description": "Copy text and link to clipboard as HTML"
+    }
+  }
+}
