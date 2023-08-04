@@ -2,10 +2,13 @@
   "manifest_version": 3,
   "name": "Link Copy",
   "version": "1.0",
-  "description": "Copy text and link to clipboard as HTML or Markdown",
+  "description": "Copy text and link to clipboard as HTML (Alt+Shift+C; ⌥+⇧+C) or Markdown (Ctrl+Shift+C; ⌃+⇧+C)",
   "permissions": ["clipboardWrite", "activeTab", "scripting"],
   "background": {
     "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "copy-link.png"
   },
   "commands": {
     "copyMarkdown": {
